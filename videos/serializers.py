@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Video
+from .models import Video, Categorias
 from django.core.validators import URLValidator
 
 
@@ -15,3 +15,9 @@ class VideoSerializer(serializers.ModelSerializer):
         except:
             raise serializers.ValidationError("URL inválida, informe uma URL válida.")
         return url
+    
+
+class CategoriaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Categorias
+        fields = "__all__"
