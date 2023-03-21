@@ -15,7 +15,7 @@ class VideoSerializer(serializers.ModelSerializer):
         except:
             raise serializers.ValidationError("URL inválida, informe uma URL válida.")
         return url
-    
+
 
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:

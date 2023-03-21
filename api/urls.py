@@ -4,8 +4,8 @@ from videos.views import VideoViewSet, CategoriaViewSet, CategoriaViewList
 
 
 router = routers.DefaultRouter()
-router.register("videos", VideoViewSet)
-router.register("categorias", CategoriaViewSet)
+router.register("videos", VideoViewSet, basename="videos")
+router.register("categorias", CategoriaViewSet, basename="categorias")
 
 urlpatterns = [
     path("", include(router.urls)),

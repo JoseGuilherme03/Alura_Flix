@@ -1,11 +1,16 @@
 from rest_framework import viewsets, generics
 from .serializers import VideoSerializer, CategoriaSerializer
 from .models import Video, Categorias
+from rest_framework import filters
 
 
 class VideoViewSet(viewsets.ModelViewSet):
     serializer_class = VideoSerializer
     queryset = Video.objects.all()
+    filter_backends = [filters.SearchFilter]
+    search_fields = [
+        "titulo",
+    ]
 
 
 class CategoriaViewSet(viewsets.ModelViewSet):
