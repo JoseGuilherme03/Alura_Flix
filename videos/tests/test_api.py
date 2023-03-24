@@ -2,7 +2,6 @@ from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase, APIClient
 from ..models import Categorias, Video
-from ..serializers import CategoriaSerializer, VideoSerializer
 
 
 class CategoriasVideoTest(APITestCase):
@@ -57,3 +56,26 @@ class CategoriasVideoTest(APITestCase):
             reverse("videos-detail", args=[self.video1.id]), format="json", data=data
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_requisicao_put_para_atualizar_categoria(self):
+        """teste para atualizar uma categoria"""
+        data = {
+            "titulo": "Categoria 1 atualizada",
+            "cor": "blue",
+        }
+        response = self.client.put(
+            reverse("categorias-detail", args=[self.categoria1.id]),
+            format="json",
+            data=data,
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_requisicao_delete_para_deletar_video(self):
+        """Teste para deletar um video"""
+        response = self.client.delete(reverse("videos-detail", args=[self.video1.id]))
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+
+    def test_requisicao_delete_para_deletar_categoria(self):
+        """Teste para deletar uma categoria"""
+        response = self.client.delete(reverse("categorias-detail", args=[self.categoria1.id]))
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
