@@ -10,7 +10,7 @@ schema_view = get_schema_view(
         title="Alura FLix",
         default_version="v1",
         description="Provedora de videos, series e filmes",
-        terms_of_service="https://www.google.com/policies/terms/",
+        terms_of_service="#",
         contact=openapi.Contact(email="contact@snippets.local"),
         license=openapi.License(name="BSD License"),
     ),
@@ -26,4 +26,7 @@ urlpatterns = [
         schema_view.with_ui("swagger", cache_timeout=0),
         name="doc_api",
     ),
+    path("api-auth/", include("rest_framework.urls")),
+    path("rest-auth/", include("dj_rest_auth.urls")),
+    path("dj-rest-auth/registration/", include("dj_rest_auth.registration.urls")),
 ]

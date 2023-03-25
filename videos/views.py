@@ -2,6 +2,8 @@ from rest_framework import viewsets, generics
 from .serializers import VideoSerializer, CategoriaSerializer
 from .models import Video, Categorias
 from rest_framework import filters
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.authentication import BasicAuthentication
 
 
 class VideoViewSet(viewsets.ModelViewSet):
@@ -11,7 +13,7 @@ class VideoViewSet(viewsets.ModelViewSet):
     search_fields = [
         "titulo",
     ]
-
+    
 
 class CategoriaViewSet(viewsets.ModelViewSet):
     serializer_class = CategoriaSerializer
