@@ -26,7 +26,6 @@ urlpatterns = [
         schema_view.with_ui("swagger", cache_timeout=0),
         name="doc_api",
     ),
-    path("api-auth/", include("rest_framework.urls")),
-    path("rest-auth/", include("dj_rest_auth.urls")),
+    path("dj-rest-auth/", include("dj_rest_auth.urls")),
     path("dj-rest-auth/registration/", include("dj_rest_auth.registration.urls")),
 ]
