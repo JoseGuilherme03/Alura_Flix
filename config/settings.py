@@ -95,11 +95,11 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "playlistvideos",
+        "NAME": "railway",
         "USER": "root",
-        "PASSWORD": "newpassword",
-        "HOST": "localhost",
-        "PORT": "3306",
+        "PASSWORD": "fAk2IZYZnUWlREJk2msI",
+        "HOST": "containers-us-west-119.railway.app",
+        "PORT": "7443",
     }
 }
 

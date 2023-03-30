@@ -1,6 +1,11 @@
 from django.urls import path, include
 from rest_framework import routers
-from videos.views import VideoViewSet, CategoriaViewSet, CategoriaViewList, VideosFreeViewList
+from videos.views import (
+    VideoViewSet,
+    CategoriaViewSet,
+    CategoriaViewList,
+    VideosFreeViewList,
+)
 
 
 router = routers.DefaultRouter()

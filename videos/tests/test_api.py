@@ -77,5 +77,7 @@ class CategoriasVideoTest(APITestCase):
 
     def test_requisicao_delete_para_deletar_categoria(self):
         """Teste para deletar uma categoria"""
-        response = self.client.delete(reverse("categorias-detail", args=[self.categoria1.id]))
+        response = self.client.delete(
+            reverse("categorias-detail", args=[self.categoria1.id])
+        )
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)

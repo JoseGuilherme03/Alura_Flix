@@ -31,6 +31,9 @@ class VideosFreeViewList(generics.ListAPIView):
     def get_queryset(self):
         queryset = Video.objects.filter(id__lt=5)
         return queryset
-    permission_classes = [AllowAny,]
+
+    permission_classes = [
+        AllowAny,
+    ]
 
     serializer_class = VideoSerializer
