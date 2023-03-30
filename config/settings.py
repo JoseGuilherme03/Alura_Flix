@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+from datetime import timedelta
 from pathlib import Path, os
 from dotenv import load_dotenv
 
@@ -162,3 +163,6 @@ REST_AUTH = {
     "JWT_AUTH_REFRESH_COOKIE": "my-refresh-token",
 }
 
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=99999),
+}
