@@ -32,6 +32,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = ["https://clientes-production.up.railway.app"]
 
+SECRET_KEY = "django-insecure-m_%efcoyqvjwv^y3toydn#o7k%3p+2x&qpuft-23m@st5js3n0"
+
 
 # Application definition
 
