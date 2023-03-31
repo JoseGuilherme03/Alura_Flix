@@ -101,11 +101,11 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["DATABASE_NAME"],
-        "USER": os.environ["DATABASE_USER"],
-        "PASSWORD": os.environ["DATABASE_PASSWORD"],
-        "HOST": os.environ["DATABASE_HOST"],
-        "PORT": os.environ["DATABASE_PORT"],
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "Da1SXTUB2KcYgDr11aJD",
+        "HOST": "containers-us-west-107.railway.app",
+        "PORT": "7995",
     }
 }
 
