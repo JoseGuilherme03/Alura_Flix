@@ -32,7 +32,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = ["https://clientes-production.up.railway.app"]
 
-SECRET_KEY = "django-insecure-m_%efcoyqvjwv^y3toydn#o7k%3p+2x&qpuft-23m@st5js3n0"
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 
 # Application definition
@@ -100,12 +100,12 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "railway",
-        "USER": "root",
-        "PASSWORD": "fAk2IZYZnUWlREJk2msI",
-        "HOST": "containers-us-west-119.railway.app",
-        "PORT": "7443",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["DATABASE_NAME"],
+        "USER": os.environ["DATABASE_USER"],
+        "PASSWORD": os.environ["DATABASE_PASSWORD"],
+        "HOST": os.environ["DATABASE_HOST"],
+        "PORT": os.environ["DATABASE_PORT"],
     }
 }
 
