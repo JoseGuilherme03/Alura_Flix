@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ["https://clientes-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["aluraflix-production-507d.up.railway.app"]
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
