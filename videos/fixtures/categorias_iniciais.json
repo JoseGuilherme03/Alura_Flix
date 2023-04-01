@@ -1,0 +1,26 @@
+[
+    {
+        "model": "videos.Categorias",
+        "pk": 1,
+        "fields": {
+            "titulo": "Livre",
+            "cor": "#f54242"
+        }
+    },
+    {
+        "model": "videos.Categorias",
+        "pk": 2,
+        "fields": {
+            "titulo": "Educacional",
+            "cor": "#0010f0"
+        }
+    },
+    {
+        "model": "videos.Categorias",
+        "pk": 3,
+        "fields": {
+            "titulo": "Esportes",
+            "cor": "#00f014"
+        }
+    }
+]

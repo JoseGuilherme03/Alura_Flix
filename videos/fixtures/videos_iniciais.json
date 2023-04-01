@@ -1,42 +1,92 @@
 [
-    {
-        "model": "videos.Video",
-        "pk": 1,
-        "fields": {
-            "titulo": "Zinedine Zidane",
-            "descricao": "The Master of Elegance",
-            "url": "https://youtu.be/j4jfxEEbJMY",
-            "categoria_id": 3
-        }
-    },
-    {
-        "model": "videos.Video",
-        "pk": 2,
-        "fields": {
-            "titulo": "Ronaldo Fenomeno",
-            "descricao": "100 Dribles Que Mostram Porque Ronaldo Era Chamado de Fenômeno",
-            "url": "https://youtu.be/PruGUsOwof4",
-            "categoria_id": 3
-        }
-    },
-    {
-        "model": "videos.Video",
-        "pk": 3,
-        "fields": {
-            "titulo": "Pelé",
-            "descricao": "Melhores Gols, Dribles e Passes",
-            "url": "https://youtu.be/ioA0DwrriWM",
-            "categoria_id": 3
-        }
-    },
-    {
-        "model": "videos.Video",
-        "pk": 4,
-        "fields": {
-            "titulo": "Como é feito o salgadinho",
-            "descricao": "Video do canal Manual do Mundo ",
-            "url": "https://youtu.be/1ZQ2QZ1X3qM",
-            "categoria_id": 1
-        }
+  {
+    "model": "videos.Video",
+    "pk": 1,
+    "fields": {
+      "titulo": "O que é ReactJS?",
+      "descricao": "Neste vídeo, Vanessa Tonini e Mario Souto explicam isto para você falando sobre como esta ferramenta surgiu, para que ela serve, quais são suas aplicações e relação com outras ferramentas e como começar a trabalhar com ela.",
+      "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0",
+      "categoria_id": 2
     }
-]       
+  },
+  {
+    "model": "videos.Video",
+    "pk": 2,
+    "fields": {
+      "titulo": "Quais as melhores práticas com React",
+      "descricao": "Recebemos o @Dev Soutinho nesse Hipsters Ponto Tube para falar sobre as melhores práticas com React e como você pode aproveitar melhor as possibilidades dessa tecnologia no cenário atual.",
+      "url": "https://www.youtube.com/watch?v=k77WZrvuDQU",
+      "categoria_id": 2
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 3,
+    "fields": {
+      "titulo": "O que faz uma desenvolvedora front-end?",
+      "descricao": "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "categoria_id": 2
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 4,
+    "fields": {
+      "titulo": "O que é REST?",
+      "descricao": "Nesse Video, Vanessa Tonini e Mario Souto explicam o que é REST e como ele funciona.",
+      "url": "https://www.youtube.com/watch?v=weQ8ssA6iBU",
+      "categoria_id": 2
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 5,
+    "fields": {
+      "titulo": "Evolução do C++",
+      "descricao": "O que mudou durante a evolução da linguagem C e quais são, de fato, as novidades do C++ moderno? Nosso instrutor, Vinicius Dias, explica nesse vídeo esse processo de evolução e que novidades surgiram.",
+      "url": "https://www.youtube.com/watch?v=_n5hLYGjdfk",
+      "categoria_id": 2
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 6,
+    "fields": {
+      "titulo": "Java, Spring, Microserviços e vagas na Hotmart",
+      "descricao": "Nessa live, Paulo Silveira conversa sobre a evolução do Java em microsserviços e sobre o caso da Hotmart com Marco Aurélio Ribeiro, especialista em desenvolvimento com 17 anos de carreira e trooper da Hotmart há mais de seis anos.",
+      "url": "https://www.youtube.com/watch?v=f46tw7lOt_0",
+      "categoria_id": 2
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 7,
+    "fields": {
+      "titulo": "Zinedine Zidane",
+      "descricao": "The Master of Elegance",
+      "url": "https://youtu.be/j4jfxEEbJMY",
+      "categoria_id": 3
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 8,
+    "fields": {
+      "titulo": "Ronaldo Fenomeno",
+      "descricao": "100 Dribles Que Mostram Porque Ronaldo Era Chamado de Fenômeno",
+      "url": "https://youtu.be/PruGUsOwof4",
+      "categoria_id": 3
+    }
+  },
+  {
+    "model": "videos.Video",
+    "pk": 9,
+    "fields": {
+      "titulo": "Pelé",
+      "descricao": "Melhores Gols, Dribles e Passes",
+      "url": "https://youtu.be/ioA0DwrriWM",
+      "categoria_id": 3
+    }
+  }
+]
